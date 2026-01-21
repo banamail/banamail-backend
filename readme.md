@@ -17,7 +17,17 @@ py server/server.py
 ```
 
 ## Usage
+You can use https://tsme.onrender.com as the API_URL but it will be with the 
+```env
+RUN_KEY=oGUG02~^?5FIYxsMn~5
+```
 
+and 
+
+```env
+URL_END=$prankapple.github.io/TSME
+```
+Site example:
 ```javascript
 const API_URL = "http://192.168.0.136:5000"; // Flask server
 const RUN_KEY = "my_super_secret_key"; // hardcoded RUN_KEY
@@ -157,3 +167,4 @@ let userKey = "";
     }
 
 ```
+
