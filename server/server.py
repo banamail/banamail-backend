@@ -6,9 +6,9 @@ from flask_cors import CORS
 
 load_dotenv()
 RUN_KEY = os.getenv("RUN_KEY")
-URL_END = os.getenv("URL_END", "!tsem.com")  # default if not in .env
+URL_END = os.getenv("URL_END")  # default if not in .env
 
-DB_FILE = "auth.db"
+DB_FILE = "mega.db"
 app = Flask(__name__)
 CORS(app)
 
@@ -133,6 +133,3 @@ def inbox(user_email):
         })
     return jsonify(emails)
 
-# ---------------- RUN ---------------- #
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
